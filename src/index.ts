@@ -4,7 +4,7 @@ import * as NiVisa from './node-ni-visa';
 const driverSession = NiVisa.viOpenDefaultRM()
 
 // Open USB device communication session
-const deviceSession = NiVisa.viOpen(driverSession, 'USB0::0x0957::0x5407::MY59002374::0::INSTR')
+const deviceSession = NiVisa.viOpen(driverSession, 'USB0::0x0699::0x03C7::C023503::INSTR')
 
 // Write and read by SCPI
 console.log('Write result:', NiVisa.viWrite(deviceSession, "SYST:ERR\n"));
